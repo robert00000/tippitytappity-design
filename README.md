@@ -20,10 +20,16 @@ classDiagram
         + add_badge(title: string)
         + get_badges() vector~string~
   }
+  class Login{
+        - accountNum: int
+        + name: string
+        + password: string
+  }
   class CreditCard{
         - storage vector~char~
         + name: string
         + digits: string
-        + Expiration: string
+        + expiration: string
+        + zip: int
   }
 ```
