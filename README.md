@@ -6,6 +6,9 @@ tippitytappity is a program to practice typing
 ## Data model
 
 ```mermaid
+---
+title: Bank sign in
+---
 classDiagram
   class Account{
         - accountNum: int
@@ -13,6 +16,10 @@ classDiagram
         + account_name: string
         + password: string
   }
+flowchart TB
+    Account --> CreditCard
+flowchart LR 
+    CreditCard
   class CreditCard{
         - storage vector~char~
         + name: string
@@ -20,4 +27,3 @@ classDiagram
         + expiration: string
         + zip: int
   }
-```
