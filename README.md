@@ -27,11 +27,15 @@ flowchart LR
         + expiration: string
         + zip: int
   }
+flowchart TB
+    Account --> AccountPage
   class AccountPage{
         - UUID: uuint
         + Title:  string
         + Balance:  float
   }
+flowchart TB
+    AccountPage --> Database
   class Database{
         - UUID: vector~uuint~ 
         - Encryption: char
