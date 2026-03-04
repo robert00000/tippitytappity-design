@@ -27,3 +27,13 @@ flowchart LR
         + expiration: string
         + zip: int
   }
+  class AccountPage{
+        - UUID: uuint
+        + Title:  string
+        + Balance:  float
+  }
+  class Database{
+        - UUID: vector~uuint~ 
+        - Encryption: char
+        + info: string
+  }
