@@ -19,7 +19,7 @@ classDiagram
 flowchart TB
     Account --> CreditCard
 flowchart LR 
-    [(CreditCard)]
+    CreditCard
   class CreditCard{
         - storage vector~char~
         + name: string
