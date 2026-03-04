@@ -17,9 +17,9 @@ classDiagram
         + password: string
   }
 flowchart TB
-    id1(Account) --> id2(CreditCard)
+    Account --> CreditCard
 flowchart LR 
-    id2(CreditCard)
+    CreditCard
   class CreditCard{
         - storage vector~char~
         + name: string
